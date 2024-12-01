@@ -1,0 +1,16 @@
+.div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+
+}
+.div a{
+    text-decoration: none;
+}
+.div img{
+    height: 250px;
+    width: 250px;
+}
