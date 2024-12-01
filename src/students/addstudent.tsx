@@ -8,7 +8,7 @@ export default function AddStudent(){
             <div className="card-body">
                 <h3>add students</h3>
                <Button onclick={()=>{
-                navigate("/adddetail")
+                navigate("/student/adddetail")
                }}>add</Button>
             </div>
         </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import * as Yup from "yup"
 import { departmentcreationDTO } from "./departmentdto"
 
-export default function departmentform(props: departmentformprops) {
+export default function Departmentform(props: departmentformprops) {
 
 
 
@@ -14,7 +14,7 @@ export default function departmentform(props: departmentformprops) {
         <Formik initialValues={props.model} onSubmit={props.onsubmit} validationSchema={Yup.object({ name: Yup.string().required("Dept name is required") })}>
             {(formikprops) => (<Form>
                 <TextFeild name="name" lablename="Dept name" />
-                <Button disabled={formikprops.isSubmitting} type="submit">submit</Button>
+                <Button className="btn btn-primary" disabled={formikprops.isSubmitting} type="submit">submit</Button>
                 <Link to="/department" className="btn btn-secondary"> cancel</Link>
             </Form>)}
         </Formik>

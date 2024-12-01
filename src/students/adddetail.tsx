@@ -1,9 +1,19 @@
-export default function AddStudentDetail(){
-    return(
+import { Formik, FormikHelpers } from "formik"
+import { studentcreationDTO } from "./studentdto.model"
+
+import { Form, useNavigate } from "react-router-dom";
+import TextFeild from "../forms/textfeild";
+import Button from "../utilities/button";
+import StudentForm from "./studentform";
+
+export default function AddStudentDetail() {
+    
+    return (
         <div className="card">
             <div className="card-body">
-                <h3>add</h3>
+              <StudentForm model={{name:"",dateofbirth:undefined}} onsubmit={(values,{setSubmitting})=>{setSubmitting(false)}}/>
             </div>
         </div>
     )
 }
+

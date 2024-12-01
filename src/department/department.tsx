@@ -7,7 +7,7 @@ export default function DepartmentIndex() {
         <div className="card ">
             <div className="card-body">
                 <h1>add dept</h1>
-                <Button onclick={()=>{
+                <Button className="btn btn-primary" onclick={()=>{
                     
                     navigate("/department/adddept")
                 }}>add</Button>

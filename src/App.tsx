@@ -22,7 +22,7 @@ function App() {
         <div className='card'>
           <div className='card-body'>
             <h4 className='card-title'>Items List</h4>
-            <Button classname='btn btn-secondary'>Click</Button>
+            <Button className='btn btn-secondary'>Click</Button>
           </div>
 
         </div>
