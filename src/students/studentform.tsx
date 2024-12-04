@@ -2,6 +2,8 @@ import { studentcreationDTO } from "./studentdto.model";
 import TextFeild from "../forms/textfeild";
 import { Form, Formik, FormikHelpers } from "formik";
 import * as Yup from "yup";
+import DateField from "../forms/datefeild";
+import ImageField from "../forms/imagefield";
 
 export default function StudentForm(props: studentformprops) {
   return (
@@ -15,7 +17,9 @@ export default function StudentForm(props: studentformprops) {
     >
       {(formikprops) => (
         <Form>
-          <TextFeild name="name" lablename="label" />
+          <TextFeild name="name" lablename="name label" />
+          <DateField displayname="dateofbirth field" field="dateofbirth"/>
+          <ImageField displayname="image field" imageURL="" field="image"/>
         </Form>
       )}
     </Formik>
