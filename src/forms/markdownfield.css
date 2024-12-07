@@ -1,0 +1,15 @@
+.form-markdown{
+    display: flex;
+}
+
+.form-markdown textarea{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+}
+.form-markdown .markdown-container{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border: 3px dashed black;
+}

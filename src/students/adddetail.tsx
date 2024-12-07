@@ -14,6 +14,8 @@ export default function AddStudentDetail() {
           model={{ name: "", dateofbirth: undefined }}
           onsubmit={(values, { setSubmitting }) => {
             setSubmitting(false);
+
+            alert(JSON.stringify(values))
           }}
         />
       </div>

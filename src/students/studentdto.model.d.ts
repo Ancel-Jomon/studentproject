@@ -1,8 +1,9 @@
 export interface studentcreationDTO{
     name:string
     photo?:File
-    photourl?:URL
+    photourl?:string
     dateofbirth?:date
-    dept?:string
+    dept?:string;
+    isActive?:boolean
 
 }

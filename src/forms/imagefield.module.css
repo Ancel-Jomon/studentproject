@@ -1,6 +1,6 @@
-#maindiv{
+.maindiv{
     margin-top: 10px;
 }
-#image{
-    width: 450px;
+img{
+    width: 200px;
 }

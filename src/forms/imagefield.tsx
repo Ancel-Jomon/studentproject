@@ -1,5 +1,6 @@
 import { useFormikContext } from "formik";
 import { useState, ChangeEvent } from "react";
+import "./ImageField.module.css"
 
 export default function ImageField(props: imageFieldprops) {
   const [imageBase64, setImage64] = useState("");
@@ -44,12 +45,12 @@ export default function ImageField(props: imageFieldprops) {
         />
       </div>
       {imageBase64 ? (
-        <div id="maindiv">
+        <div className="maindiv">
           <img id="image" src={imageBase64} alt="selected image" />
         </div>
       ) : null}
       {imageURL ? (
-        <div id="maindiv">
+        <div className="maindiv">
           <img src={imageURL} alt="selected image" id="image" />
         </div>
       ) : null}

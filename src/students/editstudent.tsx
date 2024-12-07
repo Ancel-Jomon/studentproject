@@ -5,7 +5,7 @@ export default function EditStudentDetail() {
     <div className="card">
       <div className="card-body">
         <StudentForm
-          model={{ name: "name", dateofbirth: new Date("01-01-2005") }}
+          model={{ name: "someone", dateofbirth: new Date("01-01-2005") }}
           onsubmit={(values, { setSubmitting }) => {
             setSubmitting(false);
           }}
