@@ -31,7 +31,11 @@ function App() {
           {routes.map((route)=>(<Route path={route.path} Component={route.component} ></Route>))}
         </Routes>
       </div>
-
+      <footer className='mt-5 bd-footer py-5 bg-light'>
+        <div className='container'>
+          student catelog {new Date().getFullYear().toString()}
+        </div>
+      </footer>
     </BrowserRouter>
 
   );
